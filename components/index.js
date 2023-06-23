@@ -17,31 +17,12 @@ var __copyProps = (to, from, except, desc) => {
 };
 var __toCommonJS = (mod) => __copyProps(__defProp({}, "__esModule", { value: true }), mod);
 
-// src/index.ts
-var src_exports = {};
-__export(src_exports, {
-  Button: () => Button_default,
-  useMediaQuery: () => useMediaQuery
+// src/components/index.ts
+var components_exports = {};
+__export(components_exports, {
+  Button: () => Button_default
 });
-module.exports = __toCommonJS(src_exports);
-
-// src/functions/useMediaQuery.ts
-var import_react = require("react");
-function useMediaQuery(query) {
-  const [matches, setMatches] = (0, import_react.useState)(false);
-  (0, import_react.useEffect)(() => {
-    const media = window.matchMedia(`(min-width: ${query}px)`);
-    if (media.matches !== matches) {
-      setMatches(media.matches);
-    }
-    const listener = () => {
-      setMatches(media.matches);
-    };
-    media.addEventListener("change", listener);
-    return () => media.removeEventListener("change", listener);
-  }, [matches, query]);
-  return matches;
-}
+module.exports = __toCommonJS(components_exports);
 
 // src/components/Button.tsx
 var Button = ({ children }) => {
@@ -50,6 +31,5 @@ var Button = ({ children }) => {
 var Button_default = Button;
 // Annotate the CommonJS export names for ESM import in node:
 0 && (module.exports = {
-  Button,
-  useMediaQuery
+  Button
 });
