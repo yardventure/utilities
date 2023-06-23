@@ -25,8 +25,9 @@ __export(components_exports, {
 module.exports = __toCommonJS(components_exports);
 
 // src/components/Button.tsx
+var import_jsx_runtime = require("react/jsx-runtime");
 var Button = ({ children }) => {
-  return /* @__PURE__ */ React.createElement("button", null, children);
+  return /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", { children });
 };
 var Button_default = Button;
 // Annotate the CommonJS export names for ESM import in node:
