@@ -1,2 +1,52 @@
-.button {
-  background-color: red; }
+.flex-8us4IE {
+  display: flex; }
+  .flex-8us4IE.flex-8us4IE-inline-flex {
+    display: inline-flex; }
+  .flex-8us4IE.flex-8us4IE-wrap {
+    flex-wrap: wrap; }
+  .flex-8us4IE.flex-8us4IE-fullHeight {
+    height: 100%; }
+  .flex-8us4IE.flex-8us4IE-fullWidth {
+    width: 100%; }
+  .flex-8us4IE.flex-8us4IE-center {
+    align-items: center;
+    justify-content: center; }
+
+.flex-8us4IE-flexDirection-row {
+  flex-direction: row; }
+
+.flex-8us4IE-flexDirection-column {
+  flex-direction: column; }
+
+.flex-8us4IE-flexDirection-column-reverse {
+  flex-direction: column-reverse; }
+
+.flex-8us4IE-alignItems-flex-start {
+  align-items: flex-start; }
+
+.flex-8us4IE-alignItems-center {
+  align-items: center; }
+
+.flex-8us4IE-alignItems-flex-end {
+  align-items: flex-end; }
+
+.flex-8us4IE-alignItems-baseline {
+  align-items: baseline; }
+
+.flex-8us4IE-alignItems-stretch {
+  align-items: stretch; }
+
+.flex-8us4IE-justifyContent-flex-start {
+  justify-content: flex-start; }
+
+.flex-8us4IE-justifyContent-center {
+  justify-content: center; }
+
+.flex-8us4IE-justifyContent-flex-end {
+  justify-content: flex-end; }
+
+.flex-8us4IE-justifyContent-space-between {
+  justify-content: space-between; }
+
+.flex-8us4IE-justifyContent-stretch {
+  justify-content: stretch; }
