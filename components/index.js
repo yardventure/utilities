@@ -179,10 +179,13 @@ var Box = ({
   return /* @__PURE__ */ (0, import_jsx_runtime3.jsx)(
     "div",
     {
-      className: `box-8us4IE ${className}`,
-      "data-box-8us4IE-color": `${backgroundColor}-${opacity}`,
-      "data-box-8us4IE-border": border,
-      "data-box-8us4IE-shadow": shadow,
+      className: `
+        box-8us4IE 
+        ${backgroundColor ? `box-8us4IE-backgroundColor-${backgroundColor}-${opacity}` : ""}
+        ${border ? `box-8us4IE-border-${border}` : ""}
+        ${shadow ? `box-8us4IE-shadow-${shadow}` : ""}
+        ${className}
+      `,
       style: customStyles,
       onClick: () => {
         onClick && onClick();
