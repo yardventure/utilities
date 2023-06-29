@@ -106,15 +106,15 @@ var Flex = ({
     "div",
     {
       className: `
-        flex-8us4I&
-        flex-8us4I&-${display}
-        flex-8us4I&-${`alignItems-${alignItems}`}
-        flex-8us4I&-${`justifyContent-${justifyContent}`}
-        flex-8us4I&-${`flexDirection-${flexDirection}`}
-        ${wrap ? "flex-8us4I&-wrap" : ""}
-        ${fullHeight ? "flex-8us4I&-fullHeight" : ""}
-        ${fullWidth ? "flex-8us4I&-fullWidth" : ""}
-        ${center ? "flex-8us4I&-center" : ""}
+        flex-8us4IE
+        flex-8us4IE-${display}
+        flex-8us4IE-${`alignItems-${alignItems}`}
+        flex-8us4IE-${`justifyContent-${justifyContent}`}
+        flex-8us4IE-${`flexDirection-${flexDirection}`}
+        ${wrap ? "flex-8us4IE-wrap" : ""}
+        ${fullHeight ? "flex-8us4IE-fullHeight" : ""}
+        ${fullWidth ? "flex-8us4IE-fullWidth" : ""}
+        ${center ? "flex-8us4IE-center" : ""}
         ${className}
       `,
       style: customStyles,
