@@ -20,6 +20,7 @@ var __toCommonJS = (mod) => __copyProps(__defProp({}, "__esModule", { value: tru
 // src/components/index.ts
 var components_exports = {};
 __export(components_exports, {
+  Box: () => Box_default,
   Button: () => Button_default,
   Flex: () => Flex_default
 });
@@ -51,6 +52,21 @@ function useMediaQuery(query) {
 }
 
 // src/functions/getStyles.ts
+var getStyleArray = (value, isDesktop) => {
+  if (isDesktop) {
+    if (value.lg) {
+      return value.lg.map((val) => convertUnit(val)).join(" ");
+    }
+    if (value.sm) {
+      return value.sm.map((val) => convertUnit(val)).join(" ");
+    }
+  } else {
+    if (value.sm) {
+      return value.sm.map((val) => convertUnit(val)).join(" ");
+    }
+    return "0";
+  }
+};
 var getStyle = (value, isDesktop) => {
   if (isDesktop) {
     if (value.lg == 0) {
@@ -127,8 +143,59 @@ var Flex = ({
   );
 };
 var Flex_default = Flex;
+
+// src/components/Box.tsx
+var import_jsx_runtime3 = require("react/jsx-runtime");
+var Box = ({
+  children,
+  backgroundColor = "",
+  padding,
+  borderRadius,
+  borderWidth,
+  border = "",
+  opacity = 100,
+  shadow,
+  overflow = "visible",
+  className = "",
+  spacing,
+  onClick
+}) => {
+  const isDesktop = useMediaQuery(1168);
+  const customStyles = {
+    overflow
+  };
+  if (padding) {
+    customStyles.padding = getStyleArray(padding, isDesktop);
+  }
+  if (borderRadius) {
+    customStyles.borderRadius = getStyleArray(borderRadius, isDesktop);
+  }
+  if (spacing) {
+    customStyles.marginBottom = getStyle(spacing, isDesktop);
+  }
+  if (borderWidth) {
+    customStyles.borderWidth = convertUnit(borderWidth);
+  }
+  return /* @__PURE__ */ (0, import_jsx_runtime3.jsx)(
+    "div",
+    {
+      className: `box-8us4IE ${className}`,
+      "data-box-8us4IE-color": `${backgroundColor}-${opacity}`,
+      "data-box-8us4IE-border": border,
+      "data-box-8us4IE-shadow": shadow,
+      style: customStyles,
+      onClick: () => {
+        onClick && onClick();
+      },
+      role: onClick ? "button" : "",
+      children
+    }
+  );
+};
+var Box_default = Box;
 // Annotate the CommonJS export names for ESM import in node:
 0 && (module.exports = {
+  Box,
   Button,
   Flex
 });
