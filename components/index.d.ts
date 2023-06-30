@@ -1,7 +1,7 @@
 import * as react_jsx_runtime from 'react/jsx-runtime';
 
 interface ButtonProps {
-    as: any;
+    as?: any;
     buttonColor?: string;
     textColor?: string;
     href?: string;
