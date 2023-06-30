@@ -1,9 +1,27 @@
 import * as react_jsx_runtime from 'react/jsx-runtime';
 
-interface ButtonBase {
+interface ButtonProps {
+    as: any;
+    buttonColor: string;
+    textColor: string;
+    href?: string;
+    external?: boolean;
+    variant?: string;
+    buttonHeight?: number;
+    buttonWidth?: number | null;
+    shadow?: boolean;
+    border?: boolean;
+    loading?: boolean;
+    disabled?: boolean;
+    startIcon?: JSX.Element;
+    endIcon?: JSX.Element;
+    className?: string;
+    hint?: string;
+    transform?: "uppercase";
     children: string;
+    onClick?: Function;
 }
-declare const Button: ({ children }: ButtonBase) => react_jsx_runtime.JSX.Element;
+declare const Button: ({ as, buttonColor, textColor, href, external, variant, buttonHeight, buttonWidth, shadow, border, loading, disabled, startIcon, endIcon, className, hint, transform, children, onClick, }: ButtonProps) => react_jsx_runtime.JSX.Element;
 
 interface FlexProps {
     children: React.ReactNode;
@@ -72,7 +90,7 @@ interface TextProps {
         sm?: number;
         lg?: number;
     };
-    fontFamily?: "inter" | false;
+    fontFamily?: string;
 }
 declare const Text: ({ tagName, mobile, transform, decoration, fontWeight, variant, color, className, align, spacing, fontFamily, children, }: TextProps) => react_jsx_runtime.JSX.Element;
 

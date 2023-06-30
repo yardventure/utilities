@@ -27,30 +27,19 @@ __export(components_exports, {
 });
 module.exports = __toCommonJS(components_exports);
 
-// src/components/Button.tsx
+// src/custom/LoadingSpinner.tsx
 var import_jsx_runtime = require("react/jsx-runtime");
-var Button = ({ children }) => {
-  return /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", { className: "button", children });
-};
-var Button_default = Button;
-
-// src/functions/useMediaQuery.ts
-var import_react = require("react");
-function useMediaQuery(query) {
-  const [matches, setMatches] = (0, import_react.useState)(false);
-  (0, import_react.useEffect)(() => {
-    const media = window.matchMedia(`(min-width: ${query}px)`);
-    if (media.matches !== matches) {
-      setMatches(media.matches);
+var LoadingSpinner = () => {
+  return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(
+    "div",
+    {
+      className: `
+        loader-8us4IE
+      `
     }
-    const listener = () => {
-      setMatches(media.matches);
-    };
-    media.addEventListener("change", listener);
-    return () => media.removeEventListener("change", listener);
-  }, [matches, query]);
-  return matches;
-}
+  );
+};
+var LoadingSpinner_default = LoadingSpinner;
 
 // src/functions/getStyles.ts
 var getStyleArray = (value, isDesktop) => {
@@ -90,8 +79,103 @@ var convertUnit = (value) => {
   return `${value / 10}rem`;
 };
 
-// src/components/Flex.tsx
+// src/components/Button.tsx
 var import_jsx_runtime2 = require("react/jsx-runtime");
+var Button = ({
+  as,
+  buttonColor,
+  textColor,
+  href,
+  external,
+  variant = "",
+  buttonHeight = 56,
+  buttonWidth,
+  shadow = false,
+  border,
+  loading = false,
+  disabled = false,
+  startIcon,
+  endIcon,
+  className = "",
+  hint,
+  transform,
+  children,
+  onClick
+}) => {
+  const handleClick = () => {
+    if (!disabled && onClick) {
+      onClick();
+      return;
+    }
+  };
+  const customStyles = {};
+  if (buttonWidth) {
+    customStyles.width = convertUnit(buttonWidth);
+  }
+  if (buttonHeight) {
+    customStyles.height = convertUnit(buttonHeight);
+  }
+  return /* @__PURE__ */ (0, import_jsx_runtime2.jsx)(
+    "button",
+    {
+      style: customStyles,
+      className: `
+        button-8us4IE
+        button-8us4IE-variant-${variant}
+        button-8us4IE-buttonColor-${buttonColor}
+        button-8us4IE-textColor-${textColor}
+        ${border ? `button-8us4IE-border-${border}` : ""}
+        ${shadow ? "button-8us4IE-shadow" : ""}
+        ${loading ? "button-8us4IE-loading" : ""}
+        ${transform ? `button-8us4IE-transform-${transform}` : ""}
+        ${className}
+      `,
+      disabled: loading || disabled,
+      onClick: handleClick,
+      children: /* @__PURE__ */ (0, import_jsx_runtime2.jsxs)(LinkWrapper, { as, href, target: external ? "_blank" : "_self", children: [
+        startIcon,
+        children,
+        hint && /* @__PURE__ */ (0, import_jsx_runtime2.jsx)("span", { className: "button-8us4IE__hint", children: hint }),
+        endIcon,
+        loading && /* @__PURE__ */ (0, import_jsx_runtime2.jsx)(LoadingSpinner_default, {})
+      ] })
+    }
+  );
+};
+var LinkWrapper = ({
+  as,
+  href,
+  target,
+  children
+}) => {
+  const Tag = as;
+  if (href) {
+    return /* @__PURE__ */ (0, import_jsx_runtime2.jsx)(Tag, { href, target, className: "button-8us4IE-link", children });
+  }
+  return /* @__PURE__ */ (0, import_jsx_runtime2.jsx)("div", { className: "button-8us4IE-link", children });
+};
+var Button_default = Button;
+
+// src/functions/useMediaQuery.ts
+var import_react = require("react");
+function useMediaQuery(query) {
+  const [matches, setMatches] = (0, import_react.useState)(false);
+  (0, import_react.useEffect)(() => {
+    const media = window.matchMedia(`(min-width: ${query}px)`);
+    if (media.matches !== matches) {
+      setMatches(media.matches);
+    }
+    const listener = () => {
+      setMatches(media.matches);
+    };
+    media.addEventListener("change", listener);
+    return () => media.removeEventListener("change", listener);
+  }, [matches, query]);
+  return matches;
+}
+
+// src/components/Flex.tsx
+var import_jsx_runtime3 = require("react/jsx-runtime");
 var Flex = ({
   children,
   display = "flex",
@@ -119,7 +203,7 @@ var Flex = ({
   if (spacing) {
     customStyles.marginBottom = getStyle(spacing, isDesktop);
   }
-  return /* @__PURE__ */ (0, import_jsx_runtime2.jsx)(
+  return /* @__PURE__ */ (0, import_jsx_runtime3.jsx)(
     "div",
     {
       className: `
@@ -146,7 +230,7 @@ var Flex = ({
 var Flex_default = Flex;
 
 // src/components/Box.tsx
-var import_jsx_runtime3 = require("react/jsx-runtime");
+var import_jsx_runtime4 = require("react/jsx-runtime");
 var Box = ({
   children,
   backgroundColor = "",
@@ -177,7 +261,7 @@ var Box = ({
   if (borderWidth) {
     customStyles.borderWidth = convertUnit(borderWidth);
   }
-  return /* @__PURE__ */ (0, import_jsx_runtime3.jsx)(
+  return /* @__PURE__ */ (0, import_jsx_runtime4.jsx)(
     "div",
     {
       className: `
@@ -199,7 +283,7 @@ var Box = ({
 var Box_default = Box;
 
 // src/components/Text.tsx
-var import_jsx_runtime4 = require("react/jsx-runtime");
+var import_jsx_runtime5 = require("react/jsx-runtime");
 var Text = ({
   tagName,
   mobile = false,
@@ -211,7 +295,7 @@ var Text = ({
   className = "",
   align,
   spacing,
-  fontFamily = "inter",
+  fontFamily,
   children
 }) => {
   const isDesktop = useMediaQuery(1168);
@@ -223,7 +307,7 @@ var Text = ({
   if (fontWeight) {
     customStyles.fontWeight = fontWeight.toString();
   }
-  return /* @__PURE__ */ (0, import_jsx_runtime4.jsx)(
+  return /* @__PURE__ */ (0, import_jsx_runtime5.jsx)(
     Tag,
     {
       style: customStyles,
