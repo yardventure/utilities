@@ -22,7 +22,8 @@ var components_exports = {};
 __export(components_exports, {
   Box: () => Box_default,
   Button: () => Button_default,
-  Flex: () => Flex_default
+  Flex: () => Flex_default,
+  Text: () => Text_default
 });
 module.exports = __toCommonJS(components_exports);
 
@@ -196,9 +197,56 @@ var Box = ({
   );
 };
 var Box_default = Box;
+
+// src/components/Text.tsx
+var import_jsx_runtime4 = require("react/jsx-runtime");
+var Text = ({
+  tagName,
+  mobile = false,
+  transform,
+  decoration,
+  fontWeight,
+  variant,
+  color,
+  className = "",
+  align,
+  spacing,
+  fontFamily = "inter",
+  children
+}) => {
+  const isDesktop = useMediaQuery(1168);
+  const Tag = tagName;
+  const customStyles = {};
+  if (spacing) {
+    customStyles.marginBottom = getStyle(spacing, isDesktop);
+  }
+  if (fontWeight) {
+    customStyles.fontWeight = fontWeight.toString();
+  }
+  return /* @__PURE__ */ (0, import_jsx_runtime4.jsx)(
+    Tag,
+    {
+      style: customStyles,
+      className: `
+        text-8us4IE
+        text-8us4IE-variant-${variant}
+        text-8us4IE-fontFamily-${fontFamily}
+        ${color ? `text-8us4IE-color-${color}` : ""}
+        ${align ? `text-8us4IE-align-${align}` : ""}
+        ${mobile ? `text-8us4IE-mobile` : ""}
+        ${transform ? `text-8us4IE-transform-${transform}` : ""}
+        ${decoration ? `text-8us4IE-decoration-${decoration}` : ""}
+        ${className}
+      `,
+      children
+    }
+  );
+};
+var Text_default = Text;
 // Annotate the CommonJS export names for ESM import in node:
 0 && (module.exports = {
   Box,
   Button,
-  Flex
+  Flex,
+  Text
 });

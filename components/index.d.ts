@@ -43,11 +43,11 @@ interface BoxProps {
         sm?: number[];
         lg?: number[];
     };
-    border?: string;
-    borderWidth?: number;
-    opacity?: number;
-    shadow?: "xs" | "sm" | "md";
-    overflow?: "hidden" | "visible";
+    border?: string | false;
+    borderWidth?: number | false;
+    opacity?: number | false;
+    shadow?: string | false;
+    overflow?: "hidden" | "visible" | "scroll";
     spacing?: {
         sm?: number;
         lg?: number;
@@ -57,4 +57,23 @@ interface BoxProps {
 }
 declare const Box: ({ children, backgroundColor, padding, borderRadius, borderWidth, border, opacity, shadow, overflow, className, spacing, onClick, }: BoxProps) => react_jsx_runtime.JSX.Element;
 
-export { Box, Button, Flex };
+interface TextProps {
+    tagName: "h1" | "h2" | "h3" | "h4" | "h5" | "h6" | "p" | "span";
+    variant: string;
+    children: React.ReactNode;
+    mobile?: boolean | false;
+    transform?: "uppercase" | "capitalize" | "lowercase" | false;
+    decoration?: "underline" | "lineThrough";
+    fontWeight?: 400 | 500 | 600 | 700 | 800 | 900;
+    color?: string | false;
+    className?: string;
+    align?: "center" | "left" | "right" | false;
+    spacing?: {
+        sm?: number;
+        lg?: number;
+    };
+    fontFamily?: "inter" | false;
+}
+declare const Text: ({ tagName, mobile, transform, decoration, fontWeight, variant, color, className, align, spacing, fontFamily, children, }: TextProps) => react_jsx_runtime.JSX.Element;
+
+export { Box, Button, Flex, Text };

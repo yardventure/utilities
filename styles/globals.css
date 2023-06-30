@@ -50,3 +50,27 @@
 
 .flex-8us4IE-justifyContent-stretch {
   justify-content: stretch; }
+
+.text-8us4IE-align-left {
+  text-align: left; }
+
+.text-8us4IE-align-center {
+  text-align: center; }
+
+.text-8us4IE-align-right {
+  text-align: right; }
+
+.text-8us4IE-transform-uppercase {
+  text-transform: uppercase; }
+
+.text-8us4IE-transform-capitalize {
+  text-transform: capitalize; }
+
+.text-8us4IE-transform-lowercase {
+  text-transform: lowercase; }
+
+.text-8us4IE-decoration-underline {
+  text-decoration: underline; }
+
+.text-8us4IE-decoration-lineThrough {
+  text-decoration: lineThrough; }
