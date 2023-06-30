@@ -2,13 +2,14 @@ import * as react_jsx_runtime from 'react/jsx-runtime';
 
 interface ButtonProps {
     as: any;
-    buttonColor: string;
-    textColor: string;
+    buttonColor?: string;
+    textColor?: string;
     href?: string;
     external?: boolean;
     variant?: string;
     buttonHeight?: number;
     buttonWidth?: number | null;
+    borderRadius?: number;
     shadow?: boolean;
     border?: boolean;
     loading?: boolean;
@@ -21,7 +22,7 @@ interface ButtonProps {
     children: string;
     onClick?: Function;
 }
-declare const Button: ({ as, buttonColor, textColor, href, external, variant, buttonHeight, buttonWidth, shadow, border, loading, disabled, startIcon, endIcon, className, hint, transform, children, onClick, }: ButtonProps) => react_jsx_runtime.JSX.Element;
+declare const Button: ({ as, buttonColor, textColor, href, external, variant, buttonHeight, buttonWidth, borderRadius, shadow, border, loading, disabled, startIcon, endIcon, className, hint, transform, children, onClick, }: ButtonProps) => react_jsx_runtime.JSX.Element;
 
 interface FlexProps {
     children: React.ReactNode;
@@ -94,4 +95,22 @@ interface TextProps {
 }
 declare const Text: ({ tagName, mobile, transform, decoration, fontWeight, variant, color, className, align, spacing, fontFamily, children, }: TextProps) => react_jsx_runtime.JSX.Element;
 
-export { Box, Button, Flex, Text };
+interface GridProps {
+    children: React.ReactNode;
+    column: {
+        sm?: number;
+        lg?: number;
+    };
+    gutter: {
+        lg?: 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12;
+        sm?: 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12;
+    };
+    className?: string;
+    spacing?: {
+        sm?: number;
+        lg?: number;
+    };
+}
+declare const Grid: ({ children, column, gutter, className, spacing, }: GridProps) => react_jsx_runtime.JSX.Element;
+
+export { Box, Button, Flex, Grid, Text };

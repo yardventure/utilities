@@ -23,6 +23,7 @@ __export(components_exports, {
   Box: () => Box_default,
   Button: () => Button_default,
   Flex: () => Flex_default,
+  Grid: () => Grid_default,
   Text: () => Text_default
 });
 module.exports = __toCommonJS(components_exports);
@@ -75,6 +76,19 @@ var getStyle = (value, isDesktop) => {
     return "0";
   }
 };
+var getStyleSpacing = (value, isDesktop) => {
+  if (isDesktop) {
+    if (value.lg == 0) {
+      return value.lg;
+    }
+    return value.lg || value.sm;
+  } else {
+    if (value.sm) {
+      return value.sm;
+    }
+    return "0";
+  }
+};
 var convertUnit = (value) => {
   return `${value / 10}rem`;
 };
@@ -90,6 +104,7 @@ var Button = ({
   variant = "",
   buttonHeight = 56,
   buttonWidth,
+  borderRadius = 8,
   shadow = false,
   border,
   loading = false,
@@ -115,16 +130,22 @@ var Button = ({
   if (buttonHeight) {
     customStyles.height = convertUnit(buttonHeight);
   }
+  if (borderRadius) {
+    customStyles.borderRadius = convertUnit(borderRadius);
+  }
+  if (href && onClick) {
+    throw new Error("Please provider either href or onClick");
+  }
   return /* @__PURE__ */ (0, import_jsx_runtime2.jsx)(
     "button",
     {
       style: customStyles,
       className: `
         button-8us4IE
-        button-8us4IE-variant-${variant}
         button-8us4IE-buttonColor-${buttonColor}
         button-8us4IE-textColor-${textColor}
-        ${border ? `button-8us4IE-border-${border}` : ""}
+        ${variant ? `button-8us4IE-variant-${variant}` : ""}
+        ${border ? "button-8us4IE-border" : ""}
         ${shadow ? "button-8us4IE-shadow" : ""}
         ${loading ? "button-8us4IE-loading" : ""}
         ${transform ? `button-8us4IE-transform-${transform}` : ""}
@@ -149,6 +170,9 @@ var LinkWrapper = ({
   children
 }) => {
   const Tag = as;
+  if (as && !href || !as && href) {
+    throw new Error("Please provide both - as and href props");
+  }
   if (href) {
     return /* @__PURE__ */ (0, import_jsx_runtime2.jsx)(Tag, { href, target, className: "button-8us4IE-link", children });
   }
@@ -327,10 +351,43 @@ var Text = ({
   );
 };
 var Text_default = Text;
+
+// src/components/Grid.tsx
+var import_jsx_runtime6 = require("react/jsx-runtime");
+var Grid = ({
+  children,
+  column,
+  gutter,
+  className = "",
+  spacing
+}) => {
+  const isDesktop = useMediaQuery(1168);
+  const customStyles = {};
+  if (spacing) {
+    customStyles.marginBottom = getStyle(spacing, isDesktop);
+  }
+  return /* @__PURE__ */ (0, import_jsx_runtime6.jsx)(
+    "div",
+    {
+      className: `
+        grid-8us4IE
+        grid-8us4IE-${getStyleSpacing(column, isDesktop)}-${getStyleSpacing(
+        gutter,
+        isDesktop
+      )}
+        ${className}
+      `,
+      style: customStyles,
+      children
+    }
+  );
+};
+var Grid_default = Grid;
 // Annotate the CommonJS export names for ESM import in node:
 0 && (module.exports = {
   Box,
   Button,
   Flex,
+  Grid,
   Text
 });
