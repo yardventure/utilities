@@ -96,6 +96,14 @@
   .button-8us4IE-loading {
     opacity: .5;
     pointer-events: none; }
+    .button-8us4IE-loading .loader-8us4IE {
+      border: .2rem solid transparent;
+      border-radius: 50%;
+      border-top: .2rem solid black;
+      border-right: .2rem solid black;
+      width: 1.2rem;
+      height: 1.2rem;
+      animation: spin-8us4IE 2s linear infinite; }
   .button-8us4IE-transform-uppercase {
     text-transform: uppercase; }
   .button-8us4IE-hint {
@@ -1038,3 +1046,9 @@
     margin-right: 0; }
     .grid-8us4IE-1-12 > * {
       width: 100%; } }
+
+@keyframes spin-8us4IE {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
