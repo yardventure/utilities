@@ -101,8 +101,8 @@
       border-radius: 50%;
       border-top: .2rem solid black;
       border-right: .2rem solid black;
-      width: 1.2rem;
-      height: 1.2rem;
+      width: 1.4rem;
+      height: 1.4rem;
       animation: spin-8us4IE 2s linear infinite; }
   .button-8us4IE-transform-uppercase {
     text-transform: uppercase; }
