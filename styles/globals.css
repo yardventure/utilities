@@ -103,7 +103,8 @@
       border-right: .2rem solid black;
       width: 1.4rem;
       height: 1.4rem;
-      animation: spin-8us4IE 2s linear infinite; }
+      animation: spin-8us4IE 2s linear infinite;
+      margin-left: .8rem; }
   .button-8us4IE-transform-uppercase {
     text-transform: uppercase; }
   .button-8us4IE-hint {
