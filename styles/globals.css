@@ -1057,7 +1057,7 @@
 .row-8us4IE {
   width: 100%; }
 
-@media screen and (max-width: 1168px) {
+@media screen and (min-width: 1168px) {
   .row-8us4IE {
     display: flex;
     flex-wrap: wrap;

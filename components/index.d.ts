@@ -133,4 +133,4 @@ interface ColumnProps {
 }
 declare const Column: ({ children, column, gutter }: ColumnProps) => react_jsx_runtime.JSX.Element;
 
-export { Box, Button, Flex, Grid, Column as LayoutColumn, Container as LayoutContainer, Row as LayoutRow, Text };
+export { Box, Button, Column, Container, Flex, Grid, Row, Text };
