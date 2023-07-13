@@ -113,4 +113,24 @@ interface GridProps {
 }
 declare const Grid: ({ children, column, gutter, className, spacing, }: GridProps) => react_jsx_runtime.JSX.Element;
 
-export { Box, Button, Flex, Grid, Text };
+interface ContainerProps {
+    children: React.ReactNode;
+}
+declare const Container: ({ children }: ContainerProps) => react_jsx_runtime.JSX.Element;
+
+interface RowProps {
+    padding?: number;
+    position?: "space-between" | "center" | "flex-start" | "flex-end";
+    align?: "center";
+    children: React.ReactNode;
+}
+declare const Row: ({ children, padding, position, align }: RowProps) => react_jsx_runtime.JSX.Element;
+
+interface ColumnProps {
+    column: number;
+    gutter: number;
+    children: React.ReactNode;
+}
+declare const Column: ({ children, column, gutter }: ColumnProps) => react_jsx_runtime.JSX.Element;
+
+export { Box, Button, Flex, Grid, Column as LayoutColumn, Container as LayoutContainer, Row as LayoutRow, Text };

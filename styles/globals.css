@@ -1053,3 +1053,317 @@
     transform: rotate(0deg); }
   100% {
     transform: rotate(360deg); } }
+
+.row-8us4IE {
+  width: 100%; }
+
+@media screen and (max-width: 1168px) {
+  .row-8us4IE {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%; }
+  .position-8us4IE-space-between {
+    justify-content: space-between; }
+  .position-8us4IE-center {
+    justify-content: center; }
+  .position-8us4IE-flex-start {
+    justify-content: flex-start; }
+  .position-8us4IE-flex-end {
+    justify-content: flex-end; }
+  .align-8us4IE-center {
+    align-items: center; }
+  .col-8us4IE-1-1 {
+    width: calc((1 * 6.4rem) + (1 * 3.2em)); }
+  .col-8us4IE-1-2 {
+    width: calc((1 * 6.4rem) + (2 * 3.2em)); }
+  .col-8us4IE-1-3 {
+    width: calc((1 * 6.4rem) + (3 * 3.2em)); }
+  .col-8us4IE-1-4 {
+    width: calc((1 * 6.4rem) + (4 * 3.2em)); }
+  .col-8us4IE-1-5 {
+    width: calc((1 * 6.4rem) + (5 * 3.2em)); }
+  .col-8us4IE-1-6 {
+    width: calc((1 * 6.4rem) + (6 * 3.2em)); }
+  .col-8us4IE-1-7 {
+    width: calc((1 * 6.4rem) + (7 * 3.2em)); }
+  .col-8us4IE-1-8 {
+    width: calc((1 * 6.4rem) + (8 * 3.2em)); }
+  .col-8us4IE-1-9 {
+    width: calc((1 * 6.4rem) + (9 * 3.2em)); }
+  .col-8us4IE-1-10 {
+    width: calc((1 * 6.4rem) + (10 * 3.2em)); }
+  .col-8us4IE-1-11 {
+    width: calc((1 * 6.4rem) + (11 * 3.2em)); }
+  .col-8us4IE-1-12 {
+    width: calc((1 * 6.4rem) + (12 * 3.2em)); }
+  .col-8us4IE-2-1 {
+    width: calc((2 * 6.4rem) + (1 * 3.2em)); }
+  .col-8us4IE-2-2 {
+    width: calc((2 * 6.4rem) + (2 * 3.2em)); }
+  .col-8us4IE-2-3 {
+    width: calc((2 * 6.4rem) + (3 * 3.2em)); }
+  .col-8us4IE-2-4 {
+    width: calc((2 * 6.4rem) + (4 * 3.2em)); }
+  .col-8us4IE-2-5 {
+    width: calc((2 * 6.4rem) + (5 * 3.2em)); }
+  .col-8us4IE-2-6 {
+    width: calc((2 * 6.4rem) + (6 * 3.2em)); }
+  .col-8us4IE-2-7 {
+    width: calc((2 * 6.4rem) + (7 * 3.2em)); }
+  .col-8us4IE-2-8 {
+    width: calc((2 * 6.4rem) + (8 * 3.2em)); }
+  .col-8us4IE-2-9 {
+    width: calc((2 * 6.4rem) + (9 * 3.2em)); }
+  .col-8us4IE-2-10 {
+    width: calc((2 * 6.4rem) + (10 * 3.2em)); }
+  .col-8us4IE-2-11 {
+    width: calc((2 * 6.4rem) + (11 * 3.2em)); }
+  .col-8us4IE-2-12 {
+    width: calc((2 * 6.4rem) + (12 * 3.2em)); }
+  .col-8us4IE-3-1 {
+    width: calc((3 * 6.4rem) + (1 * 3.2em)); }
+  .col-8us4IE-3-2 {
+    width: calc((3 * 6.4rem) + (2 * 3.2em)); }
+  .col-8us4IE-3-3 {
+    width: calc((3 * 6.4rem) + (3 * 3.2em)); }
+  .col-8us4IE-3-4 {
+    width: calc((3 * 6.4rem) + (4 * 3.2em)); }
+  .col-8us4IE-3-5 {
+    width: calc((3 * 6.4rem) + (5 * 3.2em)); }
+  .col-8us4IE-3-6 {
+    width: calc((3 * 6.4rem) + (6 * 3.2em)); }
+  .col-8us4IE-3-7 {
+    width: calc((3 * 6.4rem) + (7 * 3.2em)); }
+  .col-8us4IE-3-8 {
+    width: calc((3 * 6.4rem) + (8 * 3.2em)); }
+  .col-8us4IE-3-9 {
+    width: calc((3 * 6.4rem) + (9 * 3.2em)); }
+  .col-8us4IE-3-10 {
+    width: calc((3 * 6.4rem) + (10 * 3.2em)); }
+  .col-8us4IE-3-11 {
+    width: calc((3 * 6.4rem) + (11 * 3.2em)); }
+  .col-8us4IE-3-12 {
+    width: calc((3 * 6.4rem) + (12 * 3.2em)); }
+  .col-8us4IE-4-1 {
+    width: calc((4 * 6.4rem) + (1 * 3.2em)); }
+  .col-8us4IE-4-2 {
+    width: calc((4 * 6.4rem) + (2 * 3.2em)); }
+  .col-8us4IE-4-3 {
+    width: calc((4 * 6.4rem) + (3 * 3.2em)); }
+  .col-8us4IE-4-4 {
+    width: calc((4 * 6.4rem) + (4 * 3.2em)); }
+  .col-8us4IE-4-5 {
+    width: calc((4 * 6.4rem) + (5 * 3.2em)); }
+  .col-8us4IE-4-6 {
+    width: calc((4 * 6.4rem) + (6 * 3.2em)); }
+  .col-8us4IE-4-7 {
+    width: calc((4 * 6.4rem) + (7 * 3.2em)); }
+  .col-8us4IE-4-8 {
+    width: calc((4 * 6.4rem) + (8 * 3.2em)); }
+  .col-8us4IE-4-9 {
+    width: calc((4 * 6.4rem) + (9 * 3.2em)); }
+  .col-8us4IE-4-10 {
+    width: calc((4 * 6.4rem) + (10 * 3.2em)); }
+  .col-8us4IE-4-11 {
+    width: calc((4 * 6.4rem) + (11 * 3.2em)); }
+  .col-8us4IE-4-12 {
+    width: calc((4 * 6.4rem) + (12 * 3.2em)); }
+  .col-8us4IE-5-1 {
+    width: calc((5 * 6.4rem) + (1 * 3.2em)); }
+  .col-8us4IE-5-2 {
+    width: calc((5 * 6.4rem) + (2 * 3.2em)); }
+  .col-8us4IE-5-3 {
+    width: calc((5 * 6.4rem) + (3 * 3.2em)); }
+  .col-8us4IE-5-4 {
+    width: calc((5 * 6.4rem) + (4 * 3.2em)); }
+  .col-8us4IE-5-5 {
+    width: calc((5 * 6.4rem) + (5 * 3.2em)); }
+  .col-8us4IE-5-6 {
+    width: calc((5 * 6.4rem) + (6 * 3.2em)); }
+  .col-8us4IE-5-7 {
+    width: calc((5 * 6.4rem) + (7 * 3.2em)); }
+  .col-8us4IE-5-8 {
+    width: calc((5 * 6.4rem) + (8 * 3.2em)); }
+  .col-8us4IE-5-9 {
+    width: calc((5 * 6.4rem) + (9 * 3.2em)); }
+  .col-8us4IE-5-10 {
+    width: calc((5 * 6.4rem) + (10 * 3.2em)); }
+  .col-8us4IE-5-11 {
+    width: calc((5 * 6.4rem) + (11 * 3.2em)); }
+  .col-8us4IE-5-12 {
+    width: calc((5 * 6.4rem) + (12 * 3.2em)); }
+  .col-8us4IE-6-1 {
+    width: calc((6 * 6.4rem) + (1 * 3.2em)); }
+  .col-8us4IE-6-2 {
+    width: calc((6 * 6.4rem) + (2 * 3.2em)); }
+  .col-8us4IE-6-3 {
+    width: calc((6 * 6.4rem) + (3 * 3.2em)); }
+  .col-8us4IE-6-4 {
+    width: calc((6 * 6.4rem) + (4 * 3.2em)); }
+  .col-8us4IE-6-5 {
+    width: calc((6 * 6.4rem) + (5 * 3.2em)); }
+  .col-8us4IE-6-6 {
+    width: calc((6 * 6.4rem) + (6 * 3.2em)); }
+  .col-8us4IE-6-7 {
+    width: calc((6 * 6.4rem) + (7 * 3.2em)); }
+  .col-8us4IE-6-8 {
+    width: calc((6 * 6.4rem) + (8 * 3.2em)); }
+  .col-8us4IE-6-9 {
+    width: calc((6 * 6.4rem) + (9 * 3.2em)); }
+  .col-8us4IE-6-10 {
+    width: calc((6 * 6.4rem) + (10 * 3.2em)); }
+  .col-8us4IE-6-11 {
+    width: calc((6 * 6.4rem) + (11 * 3.2em)); }
+  .col-8us4IE-6-12 {
+    width: calc((6 * 6.4rem) + (12 * 3.2em)); }
+  .col-8us4IE-7-1 {
+    width: calc((7 * 6.4rem) + (1 * 3.2em)); }
+  .col-8us4IE-7-2 {
+    width: calc((7 * 6.4rem) + (2 * 3.2em)); }
+  .col-8us4IE-7-3 {
+    width: calc((7 * 6.4rem) + (3 * 3.2em)); }
+  .col-8us4IE-7-4 {
+    width: calc((7 * 6.4rem) + (4 * 3.2em)); }
+  .col-8us4IE-7-5 {
+    width: calc((7 * 6.4rem) + (5 * 3.2em)); }
+  .col-8us4IE-7-6 {
+    width: calc((7 * 6.4rem) + (6 * 3.2em)); }
+  .col-8us4IE-7-7 {
+    width: calc((7 * 6.4rem) + (7 * 3.2em)); }
+  .col-8us4IE-7-8 {
+    width: calc((7 * 6.4rem) + (8 * 3.2em)); }
+  .col-8us4IE-7-9 {
+    width: calc((7 * 6.4rem) + (9 * 3.2em)); }
+  .col-8us4IE-7-10 {
+    width: calc((7 * 6.4rem) + (10 * 3.2em)); }
+  .col-8us4IE-7-11 {
+    width: calc((7 * 6.4rem) + (11 * 3.2em)); }
+  .col-8us4IE-7-12 {
+    width: calc((7 * 6.4rem) + (12 * 3.2em)); }
+  .col-8us4IE-8-1 {
+    width: calc((8 * 6.4rem) + (1 * 3.2em)); }
+  .col-8us4IE-8-2 {
+    width: calc((8 * 6.4rem) + (2 * 3.2em)); }
+  .col-8us4IE-8-3 {
+    width: calc((8 * 6.4rem) + (3 * 3.2em)); }
+  .col-8us4IE-8-4 {
+    width: calc((8 * 6.4rem) + (4 * 3.2em)); }
+  .col-8us4IE-8-5 {
+    width: calc((8 * 6.4rem) + (5 * 3.2em)); }
+  .col-8us4IE-8-6 {
+    width: calc((8 * 6.4rem) + (6 * 3.2em)); }
+  .col-8us4IE-8-7 {
+    width: calc((8 * 6.4rem) + (7 * 3.2em)); }
+  .col-8us4IE-8-8 {
+    width: calc((8 * 6.4rem) + (8 * 3.2em)); }
+  .col-8us4IE-8-9 {
+    width: calc((8 * 6.4rem) + (9 * 3.2em)); }
+  .col-8us4IE-8-10 {
+    width: calc((8 * 6.4rem) + (10 * 3.2em)); }
+  .col-8us4IE-8-11 {
+    width: calc((8 * 6.4rem) + (11 * 3.2em)); }
+  .col-8us4IE-8-12 {
+    width: calc((8 * 6.4rem) + (12 * 3.2em)); }
+  .col-8us4IE-9-1 {
+    width: calc((9 * 6.4rem) + (1 * 3.2em)); }
+  .col-8us4IE-9-2 {
+    width: calc((9 * 6.4rem) + (2 * 3.2em)); }
+  .col-8us4IE-9-3 {
+    width: calc((9 * 6.4rem) + (3 * 3.2em)); }
+  .col-8us4IE-9-4 {
+    width: calc((9 * 6.4rem) + (4 * 3.2em)); }
+  .col-8us4IE-9-5 {
+    width: calc((9 * 6.4rem) + (5 * 3.2em)); }
+  .col-8us4IE-9-6 {
+    width: calc((9 * 6.4rem) + (6 * 3.2em)); }
+  .col-8us4IE-9-7 {
+    width: calc((9 * 6.4rem) + (7 * 3.2em)); }
+  .col-8us4IE-9-8 {
+    width: calc((9 * 6.4rem) + (8 * 3.2em)); }
+  .col-8us4IE-9-9 {
+    width: calc((9 * 6.4rem) + (9 * 3.2em)); }
+  .col-8us4IE-9-10 {
+    width: calc((9 * 6.4rem) + (10 * 3.2em)); }
+  .col-8us4IE-9-11 {
+    width: calc((9 * 6.4rem) + (11 * 3.2em)); }
+  .col-8us4IE-9-12 {
+    width: calc((9 * 6.4rem) + (12 * 3.2em)); }
+  .col-8us4IE-10-1 {
+    width: calc((10 * 6.4rem) + (1 * 3.2em)); }
+  .col-8us4IE-10-2 {
+    width: calc((10 * 6.4rem) + (2 * 3.2em)); }
+  .col-8us4IE-10-3 {
+    width: calc((10 * 6.4rem) + (3 * 3.2em)); }
+  .col-8us4IE-10-4 {
+    width: calc((10 * 6.4rem) + (4 * 3.2em)); }
+  .col-8us4IE-10-5 {
+    width: calc((10 * 6.4rem) + (5 * 3.2em)); }
+  .col-8us4IE-10-6 {
+    width: calc((10 * 6.4rem) + (6 * 3.2em)); }
+  .col-8us4IE-10-7 {
+    width: calc((10 * 6.4rem) + (7 * 3.2em)); }
+  .col-8us4IE-10-8 {
+    width: calc((10 * 6.4rem) + (8 * 3.2em)); }
+  .col-8us4IE-10-9 {
+    width: calc((10 * 6.4rem) + (9 * 3.2em)); }
+  .col-8us4IE-10-10 {
+    width: calc((10 * 6.4rem) + (10 * 3.2em)); }
+  .col-8us4IE-10-11 {
+    width: calc((10 * 6.4rem) + (11 * 3.2em)); }
+  .col-8us4IE-10-12 {
+    width: calc((10 * 6.4rem) + (12 * 3.2em)); }
+  .col-8us4IE-11-1 {
+    width: calc((11 * 6.4rem) + (1 * 3.2em)); }
+  .col-8us4IE-11-2 {
+    width: calc((11 * 6.4rem) + (2 * 3.2em)); }
+  .col-8us4IE-11-3 {
+    width: calc((11 * 6.4rem) + (3 * 3.2em)); }
+  .col-8us4IE-11-4 {
+    width: calc((11 * 6.4rem) + (4 * 3.2em)); }
+  .col-8us4IE-11-5 {
+    width: calc((11 * 6.4rem) + (5 * 3.2em)); }
+  .col-8us4IE-11-6 {
+    width: calc((11 * 6.4rem) + (6 * 3.2em)); }
+  .col-8us4IE-11-7 {
+    width: calc((11 * 6.4rem) + (7 * 3.2em)); }
+  .col-8us4IE-11-8 {
+    width: calc((11 * 6.4rem) + (8 * 3.2em)); }
+  .col-8us4IE-11-9 {
+    width: calc((11 * 6.4rem) + (9 * 3.2em)); }
+  .col-8us4IE-11-10 {
+    width: calc((11 * 6.4rem) + (10 * 3.2em)); }
+  .col-8us4IE-11-11 {
+    width: calc((11 * 6.4rem) + (11 * 3.2em)); }
+  .col-8us4IE-11-12 {
+    width: calc((11 * 6.4rem) + (12 * 3.2em)); }
+  .col-8us4IE-12-1 {
+    width: calc((12 * 6.4rem) + (1 * 3.2em)); }
+  .col-8us4IE-12-2 {
+    width: calc((12 * 6.4rem) + (2 * 3.2em)); }
+  .col-8us4IE-12-3 {
+    width: calc((12 * 6.4rem) + (3 * 3.2em)); }
+  .col-8us4IE-12-4 {
+    width: calc((12 * 6.4rem) + (4 * 3.2em)); }
+  .col-8us4IE-12-5 {
+    width: calc((12 * 6.4rem) + (5 * 3.2em)); }
+  .col-8us4IE-12-6 {
+    width: calc((12 * 6.4rem) + (6 * 3.2em)); }
+  .col-8us4IE-12-7 {
+    width: calc((12 * 6.4rem) + (7 * 3.2em)); }
+  .col-8us4IE-12-8 {
+    width: calc((12 * 6.4rem) + (8 * 3.2em)); }
+  .col-8us4IE-12-9 {
+    width: calc((12 * 6.4rem) + (9 * 3.2em)); }
+  .col-8us4IE-12-10 {
+    width: calc((12 * 6.4rem) + (10 * 3.2em)); }
+  .col-8us4IE-12-11 {
+    width: calc((12 * 6.4rem) + (11 * 3.2em)); }
+  .col-8us4IE-12-12 {
+    width: calc((12 * 6.4rem) + (12 * 3.2em)); } }
+
+.container-8us4IE {
+  position: relative;
+  width: 100%;
+  max-width: 116.8rem;
+  margin: 0 auto;
+  padding: 0 2.4rem; }
