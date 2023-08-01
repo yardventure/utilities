@@ -144,11 +144,11 @@ interface AccordionProps {
 }
 declare const Accordion: ({ children, active, customClass, maxHeight, onToggle, listeners, reverse, }: AccordionProps) => react_jsx_runtime.JSX.Element;
 interface AccordionContentProps {
-    children: JSX.Element;
+    children: React.ReactNode;
 }
 declare const AccordionContent: ({ children }: AccordionContentProps) => react_jsx_runtime.JSX.Element;
 interface AccordionButtonProps {
-    children: JSX.Element;
+    children: React.ReactNode;
 }
 declare const AccordionButton: ({ children }: AccordionButtonProps) => react_jsx_runtime.JSX.Element;
 
