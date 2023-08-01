@@ -133,4 +133,23 @@ interface ColumnProps {
 }
 declare const Column: ({ children, column, gutter }: ColumnProps) => react_jsx_runtime.JSX.Element;
 
-export { Box, Button, Column, Container, Flex, Grid, Row, Text };
+interface AccordionProps {
+    children: JSX.Element[];
+    active?: boolean;
+    customClass?: string;
+    maxHeight?: number;
+    onToggle?: Function;
+    listeners?: any[];
+    reverse?: boolean;
+}
+declare const Accordion: ({ children, active, customClass, maxHeight, onToggle, listeners, reverse, }: AccordionProps) => react_jsx_runtime.JSX.Element;
+interface AccordionContentProps {
+    children: JSX.Element;
+}
+declare const AccordionContent: ({ children }: AccordionContentProps) => react_jsx_runtime.JSX.Element;
+interface AccordionButtonProps {
+    children: JSX.Element;
+}
+declare const AccordionButton: ({ children }: AccordionButtonProps) => react_jsx_runtime.JSX.Element;
+
+export { Accordion, AccordionButton, AccordionContent, Box, Button, Column, Container, Flex, Grid, Row, Text };
