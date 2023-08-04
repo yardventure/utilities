@@ -1,6 +1,6 @@
 {
   "name": "yard-utilities-dist",
-  "version": "1.0.18",
+  "version": "1.0.19",
   "description": "components and functions for yard projects",
   "main": "index.js",
   "scripts": {
