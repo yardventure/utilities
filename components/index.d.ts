@@ -152,4 +152,18 @@ interface AccordionButtonProps {
 }
 declare const AccordionButton: ({ children }: AccordionButtonProps) => react_jsx_runtime.JSX.Element;
 
-export { Accordion, AccordionButton, AccordionContent, Box, Button, Column, Container, Flex, Grid, Row, Text };
+interface RadioProps {
+    children: React.ReactNode;
+    active: boolean;
+    setActive: Function;
+}
+declare const Radio: ({ children, active, setActive }: RadioProps) => react_jsx_runtime.JSX.Element;
+
+interface CheckboxProps {
+    children: React.ReactNode;
+    active: boolean;
+    setActive: Function;
+}
+declare const Checkbox: ({ children, active, setActive }: CheckboxProps) => react_jsx_runtime.JSX.Element;
+
+export { Accordion, AccordionButton, AccordionContent, Box, Button, Checkbox, Column, Container, Flex, Grid, Radio, Row, Text };
