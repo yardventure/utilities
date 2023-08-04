@@ -10880,15 +10880,15 @@
   opacity: 1; }
 
 .radio-8us4IE__handler {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background: #F8F4F9;
   min-width: 2.4rem;
   min-height: 2.4rem;
   max-width: 2.4rem;
   max-height: 2.4rem;
   border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   background-color: "";
   overflow: hidden; }
   .radio-8us4IE__handler__circle {
@@ -10897,9 +10897,6 @@
     max-width: 1.4rem;
     max-height: 1.4rem;
     border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     background-color: #4EB3E3;
     overflow: hidden;
     opacity: 0;
