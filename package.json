@@ -1,0 +1,15 @@
+{
+  "name": "yard-utilities-dist",
+  "version": "1.0.18",
+  "description": "components and functions for yard projects",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yardventure/yard-utilities"
+  },
+  "author": "YardVenture",
+  "license": "MIT"
+}
