@@ -5,7 +5,7 @@ interface ButtonProps {
     as?: any;
     buttonColor?: string;
     textColor?: string;
-    href?: UrlObject;
+    href?: UrlObject | string;
     external?: boolean;
     variant?: string;
     buttonHeight?: number;
@@ -20,7 +20,7 @@ interface ButtonProps {
     className?: string;
     hint?: string;
     transform?: "uppercase";
-    children: string;
+    children: React.ReactNode;
     onClick?: Function;
 }
 declare const Button: ({ as, buttonColor, textColor, href, external, variant, buttonHeight, buttonWidth, borderRadius, shadow, border, loading, disabled, startIcon, endIcon, className, hint, transform, children, onClick, }: ButtonProps) => react_jsx_runtime.JSX.Element;
