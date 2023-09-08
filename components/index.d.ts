@@ -1,10 +1,11 @@
 import * as react_jsx_runtime from 'react/jsx-runtime';
+import { UrlObject } from 'url';
 
 interface ButtonProps {
     as?: any;
     buttonColor?: string;
     textColor?: string;
-    href?: string;
+    href?: UrlObject;
     external?: boolean;
     variant?: string;
     buttonHeight?: number;
