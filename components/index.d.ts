@@ -1,7 +1,8 @@
 import * as react_jsx_runtime from 'react/jsx-runtime';
 import { UrlObject } from 'url';
+import React$1 from 'react';
 
-interface ButtonProps {
+interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
     as?: any;
     buttonColor?: string;
     textColor?: string;
@@ -9,28 +10,25 @@ interface ButtonProps {
     external?: boolean;
     variant?: string;
     buttonHeight?: number;
-    buttonWidth?: number | null;
+    buttonWidth?: number | false;
     borderRadius?: number;
     shadow?: boolean;
     border?: boolean;
     loading?: boolean;
-    disabled?: boolean;
     startIcon?: JSX.Element;
     endIcon?: JSX.Element;
     className?: string;
     hint?: string;
     transform?: "uppercase";
-    children: React.ReactNode;
-    onClick?: Function;
 }
-declare const Button: ({ as, buttonColor, textColor, href, external, variant, buttonHeight, buttonWidth, borderRadius, shadow, border, loading, disabled, startIcon, endIcon, className, hint, transform, children, onClick, }: ButtonProps) => react_jsx_runtime.JSX.Element;
+declare const Button: ({ as, buttonColor, textColor, href, external, variant, buttonHeight, buttonWidth, borderRadius, shadow, border, loading, startIcon, endIcon, hint, transform, children, ...rest }: ButtonProps) => react_jsx_runtime.JSX.Element;
 
-interface FlexProps {
+interface FlexProps extends React.HTMLAttributes<HTMLDivElement> {
     children: React.ReactNode;
     display?: "flex" | "inline-flex";
-    alignItems?: "flex-start" | "center" | "flex-end" | "baseline" | "stretch";
-    justifyContent?: "flex-start" | "center" | "flex-end" | "space-between" | "stretch";
-    flexDirection?: "row" | "column" | "column-reverse";
+    alignItems?: "normal" | "flex-start" | "center" | "flex-end" | "baseline" | "stretch" | false;
+    justifyContent?: "normal" | "flex-start" | "center" | "flex-end" | "space-between" | "stretch" | false;
+    flexDirection?: "row" | "column" | "column-reverse" | "row-reverse" | false;
     wrap?: boolean;
     columnGap?: {
         sm?: number;
@@ -42,17 +40,15 @@ interface FlexProps {
     };
     fullHeight?: boolean;
     fullWidth?: boolean;
-    className?: string;
     spacing?: {
         sm?: number;
         lg?: number;
     };
     center?: boolean;
-    onClick?: Function;
 }
-declare const Flex: ({ children, display, alignItems, justifyContent, flexDirection, wrap, columnGap, rowGap, fullHeight, fullWidth, className, spacing, center, onClick, }: FlexProps) => react_jsx_runtime.JSX.Element;
+declare const Flex: ({ children, display, alignItems, justifyContent, flexDirection, wrap, columnGap, rowGap, fullHeight, fullWidth, spacing, center, ...rest }: FlexProps) => react_jsx_runtime.JSX.Element;
 
-interface BoxProps {
+interface BoxProps extends React.HTMLAttributes<HTMLDivElement> {
     children: React.ReactNode;
     backgroundColor?: string | false;
     padding?: {
@@ -67,26 +63,27 @@ interface BoxProps {
     borderWidth?: number | false;
     opacity?: number | false;
     shadow?: string | false;
-    overflow?: "hidden" | "visible" | "scroll";
+    overflow?: "hidden" | "visible" | "scroll" | "auto" | false;
     spacing?: {
         sm?: number;
         lg?: number;
     };
-    className?: string;
-    onClick?: Function;
 }
-declare const Box: ({ children, backgroundColor, padding, borderRadius, borderWidth, border, opacity, shadow, overflow, className, spacing, onClick, }: BoxProps) => react_jsx_runtime.JSX.Element;
+declare const Box: ({ children, backgroundColor, padding, borderRadius, borderWidth, border, opacity, shadow, overflow, spacing, ...rest }: BoxProps) => react_jsx_runtime.JSX.Element;
 
-interface TextProps {
-    tagName: "h1" | "h2" | "h3" | "h4" | "h5" | "h6" | "p" | "span";
+interface TextProps extends React$1.HTMLAttributes<[
+    HTMLParagraphElement,
+    HTMLHeadingElement,
+    HTMLSpanElement
+]> {
+    tagName: React$1.ElementType;
     variant: string;
-    children: React.ReactNode;
+    children: React$1.ReactNode;
     mobile?: boolean | false;
     transform?: "uppercase" | "capitalize" | "lowercase" | false;
-    decoration?: "underline" | "lineThrough";
+    decoration?: "underline" | "lineThrough" | false;
     fontWeight?: 400 | 500 | 600 | 700 | 800 | 900;
-    color?: string | false;
-    className?: string;
+    textColor?: string | false;
     align?: "center" | "left" | "right" | false;
     spacing?: {
         sm?: number;
@@ -94,25 +91,24 @@ interface TextProps {
     };
     fontFamily?: string;
 }
-declare const Text: ({ tagName, mobile, transform, decoration, fontWeight, variant, color, className, align, spacing, fontFamily, children, }: TextProps) => react_jsx_runtime.JSX.Element;
+declare const Text: ({ tagName, mobile, transform, decoration, fontWeight, variant, textColor, align, spacing, fontFamily, children, ...rest }: TextProps) => react_jsx_runtime.JSX.Element;
 
-interface GridProps {
+interface GridProps extends React.HTMLAttributes<HTMLDivElement> {
     children: React.ReactNode;
     column: {
         sm?: number;
         lg?: number;
     };
     gutter: {
-        sm: number[];
-        lg: number[];
+        sm?: number[];
+        lg?: number[];
     };
-    className?: string;
     spacing?: {
         sm?: number;
         lg?: number;
     };
 }
-declare const Grid: ({ children, column, gutter, className, spacing, }: GridProps) => react_jsx_runtime.JSX.Element;
+declare const Grid: ({ children, column, gutter, spacing, ...rest }: GridProps) => react_jsx_runtime.JSX.Element;
 
 interface ContainerProps {
     children: React.ReactNode;
@@ -157,14 +153,16 @@ interface RadioProps {
     children: React.ReactNode;
     active: boolean;
     setActive: Function;
+    reverse?: boolean;
 }
-declare const Radio: ({ children, active, setActive }: RadioProps) => react_jsx_runtime.JSX.Element;
+declare const Radio: ({ children, active, setActive, reverse, }: RadioProps) => react_jsx_runtime.JSX.Element;
 
 interface CheckboxProps {
     children: React.ReactNode;
     active: boolean;
     setActive: Function;
+    reverse?: boolean;
 }
-declare const Checkbox: ({ children, active, setActive }: CheckboxProps) => react_jsx_runtime.JSX.Element;
+declare const Checkbox: ({ children, active, setActive, reverse, }: CheckboxProps) => react_jsx_runtime.JSX.Element;
 
 export { Accordion, AccordionButton, AccordionContent, Box, Button, Checkbox, Column, Container, Flex, Grid, Radio, Row, Text };
