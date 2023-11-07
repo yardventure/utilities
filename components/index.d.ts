@@ -165,4 +165,11 @@ interface CheckboxProps {
 }
 declare const Checkbox: ({ children, active, setActive, reverse, }: CheckboxProps) => react_jsx_runtime.JSX.Element;
 
-export { Accordion, AccordionButton, AccordionContent, Box, Button, Checkbox, Column, Container, Flex, Grid, Radio, Row, Text };
+interface TrustpilotStarsProps {
+    size?: number;
+    starColor?: string;
+    score: number;
+}
+declare const TrustpilotStars: ({ size, starColor, score, }: TrustpilotStarsProps) => react_jsx_runtime.JSX.Element;
+
+export { Accordion, AccordionButton, AccordionContent, Box, Button, Checkbox, Column, Container, Flex, Grid, Radio, Row, Text, TrustpilotStars };
