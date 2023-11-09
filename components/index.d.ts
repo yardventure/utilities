@@ -7,6 +7,7 @@ interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
     buttonColor?: string;
     textColor?: string;
     href?: UrlObject | string;
+    prefetch?: boolean;
     external?: boolean;
     variant?: string;
     buttonHeight?: number;
@@ -21,7 +22,7 @@ interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
     hint?: string;
     transform?: "uppercase";
 }
-declare const Button: ({ as, buttonColor, textColor, href, external, variant, buttonHeight, buttonWidth, borderRadius, shadow, border, loading, startIcon, endIcon, hint, transform, children, ...rest }: ButtonProps) => react_jsx_runtime.JSX.Element;
+declare const Button: ({ as, buttonColor, textColor, href, prefetch, external, variant, buttonHeight, buttonWidth, borderRadius, shadow, border, loading, startIcon, endIcon, hint, transform, children, ...rest }: ButtonProps) => react_jsx_runtime.JSX.Element;
 
 interface FlexProps extends React.HTMLAttributes<HTMLDivElement> {
     children: React.ReactNode;
