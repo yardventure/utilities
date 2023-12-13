@@ -136,11 +136,12 @@ interface AccordionProps {
     active?: boolean;
     customClass?: string;
     maxHeight?: number;
+    contentHeight?: number;
     onToggle?: Function;
     listeners?: any[];
     reverse?: boolean;
 }
-declare const Accordion: ({ children, active, customClass, maxHeight, onToggle, listeners, reverse, }: AccordionProps) => react_jsx_runtime.JSX.Element;
+declare const Accordion: ({ children, active, customClass, maxHeight, contentHeight, onToggle, listeners, reverse, }: AccordionProps) => react_jsx_runtime.JSX.Element;
 interface AccordionContentProps {
     children: React.ReactNode;
 }
