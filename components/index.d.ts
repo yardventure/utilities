@@ -7,7 +7,6 @@ interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
     buttonColor?: string;
     textColor?: string;
     href?: UrlObject | string;
-    prefetch?: boolean;
     external?: boolean;
     variant?: string;
     buttonHeight?: number;
@@ -22,7 +21,7 @@ interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
     hint?: string;
     transform?: "uppercase";
 }
-declare const Button: ({ as, buttonColor, textColor, href, prefetch, external, variant, buttonHeight, buttonWidth, borderRadius, shadow, border, loading, startIcon, endIcon, hint, transform, children, ...rest }: ButtonProps) => react_jsx_runtime.JSX.Element;
+declare const Button: ({ as, buttonColor, textColor, href, external, variant, buttonHeight, buttonWidth, borderRadius, shadow, border, loading, startIcon, endIcon, hint, transform, children, ...rest }: ButtonProps) => react_jsx_runtime.JSX.Element;
 
 interface FlexProps extends React.HTMLAttributes<HTMLDivElement> {
     children: React.ReactNode;
@@ -151,21 +150,22 @@ interface AccordionButtonProps {
 }
 declare const AccordionButton: ({ children }: AccordionButtonProps) => react_jsx_runtime.JSX.Element;
 
-interface RadioProps {
-    children: React.ReactNode;
+interface RadioProps extends React.HTMLAttributes<HTMLDivElement> {
+    children?: React.ReactNode;
     active: boolean;
-    setActive: Function;
+    setActive?: Function;
     reverse?: boolean;
 }
-declare const Radio: ({ children, active, setActive, reverse, }: RadioProps) => react_jsx_runtime.JSX.Element;
+declare const Radio: ({ children, active, setActive, reverse, ...rest }: RadioProps) => react_jsx_runtime.JSX.Element;
 
-interface CheckboxProps {
-    children: React.ReactNode;
+interface CheckboxProps extends React.HTMLAttributes<HTMLDivElement> {
+    children?: React.ReactNode;
     active: boolean;
-    setActive: Function;
+    customIcon?: React.ReactNode;
+    setActive?: Function;
     reverse?: boolean;
 }
-declare const Checkbox: ({ children, active, setActive, reverse, }: CheckboxProps) => react_jsx_runtime.JSX.Element;
+declare const Checkbox: ({ children, active, customIcon, setActive, reverse, ...rest }: CheckboxProps) => react_jsx_runtime.JSX.Element;
 
 interface TrustpilotStarsProps {
     size?: number;
