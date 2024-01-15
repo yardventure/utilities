@@ -89,7 +89,7 @@ See https://s-c.sh/2BAXzed for more info.`),window[qe]+=1);var Br=require("react
     ${({borderRadius:e})=>(e==null?void 0:e.lg)&&`border-radius: ${e.lg.map(t=>$(t)).join(" ")};`}
     ${({spacing:e})=>(e==null?void 0:e.lg)&&`margin-bottom: ${$(e.lg)};`}
   }
-`,yo=p=>{var f=p,{children:e,backgroundColor:t="",padding:r,borderRadius:n,borderWidth:o,border:s="",opacity:i=100,shadow:c,overflow:a="visible",spacing:u}=f,l=O(f,["children","backgroundColor","padding","borderRadius","borderWidth","border","opacity","shadow","overflow","spacing"]);let T=l,{style:m,className:y}=T,b=O(T,["style","className"]);return(0,Br.jsx)(mo,M(I({className:`
+`,yo=p=>{var f=p,{children:e,backgroundColor:t="",padding:r,borderRadius:n,borderWidth:o,border:s="",opacity:i=100,shadow:c,overflow:a="visible",spacing:u}=f,l=O(f,["children","backgroundColor","padding","borderRadius","borderWidth","border","opacity","shadow","overflow","spacing"]);let T=l,{style:m,className:y}=T,b=O(T,["style","className"]);return(0,Br.jsx)(mo,M(I({padding:r,className:`
         box-8us4IE 
         ${t?`box-8us4IE-backgroundColor-${t}-${i}`:""}
         ${s?`box-8us4IE-border-${s}`:""}
