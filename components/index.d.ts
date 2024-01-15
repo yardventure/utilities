@@ -48,26 +48,26 @@ interface FlexProps extends React.HTMLAttributes<HTMLDivElement> {
 }
 declare const Flex: ({ children, display, alignItems, justifyContent, flexDirection, wrap, columnGap, rowGap, fullHeight, fullWidth, spacing, center, ...rest }: FlexProps) => react_jsx_runtime.JSX.Element;
 
+type Spacing = {
+    sm?: number;
+    lg?: number;
+};
+type SpacingArray = {
+    sm?: number[];
+    lg?: number[];
+};
+type Overflow = "hidden" | "visible" | "scroll" | "auto";
 interface BoxProps extends React.HTMLAttributes<HTMLDivElement> {
     children: React.ReactNode;
     backgroundColor?: string | false;
-    padding?: {
-        sm?: number[];
-        lg?: number[];
-    };
-    borderRadius?: {
-        sm?: number[];
-        lg?: number[];
-    };
+    padding?: SpacingArray;
+    borderRadius?: SpacingArray;
     border?: string | false;
     borderWidth?: number | false;
     opacity?: number | false;
     shadow?: string | false;
-    overflow?: "hidden" | "visible" | "scroll" | "auto" | false;
-    spacing?: {
-        sm?: number;
-        lg?: number;
-    };
+    overflow?: Overflow | false;
+    spacing?: Spacing;
 }
 declare const Box: ({ children, backgroundColor, padding, borderRadius, borderWidth, border, opacity, shadow, overflow, spacing, ...rest }: BoxProps) => react_jsx_runtime.JSX.Element;
 
