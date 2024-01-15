@@ -79,17 +79,17 @@ Perhaps you're looking to import 'styled-components/native'?
 Read more about this at https://www.styled-components.com/docs/basics#react-native`);var qe="__sc-".concat(q,"__");process.env.NODE_ENV!=="production"&&process.env.NODE_ENV!=="test"&&typeof window!="undefined"&&(window[qe]||(window[qe]=0),window[qe]===1&&console.warn(`It looks like there are several instances of 'styled-components' initialized in this application. This may cause dynamic styles to not render properly, errors during the rehydration process, a missing theme prop, and makes your application bigger without good reason.
 
 See https://s-c.sh/2BAXzed for more info.`),window[qe]+=1);var Br=require("react/jsx-runtime"),mo=Nt.div`
-  padding: ${({$padding:e})=>e!=null&&e.sm?e.sm.map(t=>D(t)).join(" "):0};
-  border-radius: ${({$borderRadius:e})=>e!=null&&e.sm?e.sm.map(t=>D(t)).join(" "):0};
-  margin-bottom: ${({$spacing:e})=>e!=null&&e.sm?D(e.sm):0};
+  ${({$padding:e})=>(e==null?void 0:e.sm)&&`padding: ${e.sm.map(t=>D(t)).join(" ")}`};
+  ${({$borderRadius:e})=>(e==null?void 0:e.sm)&&`border-radius: ${e.sm.map(t=>D(t)).join(" ")}`};
+  ${({$spacing:e})=>(e==null?void 0:e.sm)&&`margin-bottom: ${D(e.sm)}`};
   overflow: ${({$overflow:e})=>e};
-  border-width: ${({$borderWidth:e})=>D(e||0)};
+  ${({$borderWidth:e})=>e&&`border-width: ${D(e)}`};
   @media (min-width: 1168px) {
     ${({$padding:e})=>(e==null?void 0:e.lg)&&`padding: ${e.lg.map(t=>D(t)).join(" ")};`}
     ${({$borderRadius:e})=>(e==null?void 0:e.lg)&&`border-radius: ${e.lg.map(t=>D(t)).join(" ")};`}
     ${({$spacing:e})=>(e==null?void 0:e.lg)&&`margin-bottom: ${D(e.lg)};`}
   }
-`,yo=p=>{var f=p,{children:e,backgroundColor:t="",padding:r,borderRadius:n,borderWidth:o,border:s="",opacity:i=100,shadow:c,overflow:a="visible",spacing:u}=f,l=O(f,["children","backgroundColor","padding","borderRadius","borderWidth","border","opacity","shadow","overflow","spacing"]);let T=l,{style:m,className:y}=T,b=O(T,["style","className"]);return(0,Br.jsx)(mo,M(I({$padding:r,$borderRadius:n,$borderWidth:o,$overflow:a,$spacing:u,className:`
+`,yo=p=>{var f=p,{children:e,backgroundColor:t="",padding:r,borderRadius:n,borderWidth:o,border:s="",opacity:i=100,shadow:c,overflow:a="visible",spacing:u}=f,l=O(f,["children","backgroundColor","padding","borderRadius","borderWidth","border","opacity","shadow","overflow","spacing"]);let T=l,{style:m,className:y}=T,b=O(T,["style","className"]);return(0,Br.jsx)(mo,M(I({$borderRadius:n,$borderWidth:o,$overflow:a,$spacing:u,className:`
         box-8us4IE 
         ${t?`box-8us4IE-backgroundColor-${t}-${i}`:""}
         ${s?`box-8us4IE-border-${s}`:""}
