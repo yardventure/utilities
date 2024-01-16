@@ -23,31 +23,6 @@ interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
 }
 declare const Button: ({ as, buttonColor, textColor, href, external, variant, buttonHeight, buttonWidth, borderRadius, shadow, border, loading, startIcon, endIcon, hint, transform, children, ...rest }: ButtonProps) => react_jsx_runtime.JSX.Element;
 
-interface FlexProps extends React.HTMLAttributes<HTMLDivElement> {
-    children: React.ReactNode;
-    display?: "flex" | "inline-flex";
-    alignItems?: "normal" | "flex-start" | "center" | "flex-end" | "baseline" | "stretch" | false;
-    justifyContent?: "normal" | "flex-start" | "center" | "flex-end" | "space-between" | "stretch" | false;
-    flexDirection?: "row" | "column" | "column-reverse" | "row-reverse" | false;
-    wrap?: boolean;
-    columnGap?: {
-        sm?: number;
-        lg?: number;
-    };
-    rowGap?: {
-        sm?: number;
-        lg?: number;
-    };
-    fullHeight?: boolean;
-    fullWidth?: boolean;
-    spacing?: {
-        sm?: number;
-        lg?: number;
-    };
-    center?: boolean;
-}
-declare const Flex: ({ children, display, alignItems, justifyContent, flexDirection, wrap, columnGap, rowGap, fullHeight, fullWidth, spacing, center, ...rest }: FlexProps) => react_jsx_runtime.JSX.Element;
-
 interface SpacingArrayData {
     sm?: number[];
     lg?: number[];
@@ -56,6 +31,24 @@ interface SpacingData {
     sm?: number;
     lg?: number;
 }
+
+type FlexDirection = "row" | "column" | "column-reverse" | "row-reverse" | false;
+interface FlexProps extends React.HTMLAttributes<HTMLDivElement> {
+    children: React.ReactNode;
+    display?: "flex" | "inline-flex";
+    alignItems?: "normal" | "flex-start" | "center" | "flex-end" | "baseline" | "stretch" | false;
+    justifyContent?: "normal" | "flex-start" | "center" | "flex-end" | "space-between" | "stretch" | false;
+    flexDirection?: FlexDirection;
+    wrap?: boolean;
+    columnGap?: SpacingData;
+    rowGap?: SpacingData;
+    fullHeight?: boolean;
+    fullWidth?: boolean;
+    spacing?: SpacingData;
+    center?: boolean;
+    stackMobile?: boolean;
+}
+declare const Flex: ({ children, display, alignItems, justifyContent, flexDirection, wrap, columnGap, rowGap, fullHeight, fullWidth, spacing, center, stackMobile, ...rest }: FlexProps) => react_jsx_runtime.JSX.Element;
 
 type Overflow = "hidden" | "visible" | "scroll" | "auto";
 interface BoxProps extends React.HTMLAttributes<HTMLDivElement> {
@@ -86,28 +79,16 @@ interface TextProps extends React$1.HTMLAttributes<[
     fontWeight?: 400 | 500 | 600 | 700 | 800 | 900;
     textColor?: string | false;
     align?: "center" | "left" | "right" | false;
-    spacing?: {
-        sm?: number;
-        lg?: number;
-    };
+    spacing?: SpacingData;
     fontFamily?: string;
 }
 declare const Text: ({ tagName, mobile, transform, decoration, fontWeight, variant, textColor, align, spacing, fontFamily, children, ...rest }: TextProps) => react_jsx_runtime.JSX.Element;
 
 interface GridProps extends React.HTMLAttributes<HTMLDivElement> {
     children: React.ReactNode;
-    column: {
-        sm?: number;
-        lg?: number;
-    };
-    gutter: {
-        sm?: number[];
-        lg?: number[];
-    };
-    spacing?: {
-        sm?: number;
-        lg?: number;
-    };
+    column: SpacingData;
+    gutter: SpacingArrayData;
+    spacing?: SpacingData;
 }
 declare const Grid: ({ children, column, gutter, spacing, ...rest }: GridProps) => react_jsx_runtime.JSX.Element;
 
