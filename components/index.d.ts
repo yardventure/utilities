@@ -36,26 +36,34 @@ type FlexDirection = "row" | "column" | "column-reverse" | "row-reverse" | false
 interface FlexProps extends React.HTMLAttributes<HTMLDivElement> {
     children: React.ReactNode;
     display?: "flex" | "inline-flex";
-    alignItems?: "normal" | "flex-start" | "center" | "flex-end" | "baseline" | "stretch" | false;
-    justifyContent?: "normal" | "flex-start" | "center" | "flex-end" | "space-between" | "stretch" | false;
+    alignItems?: "normal" | "flex-start" | "flex-end" | "center" | "baseline" | "stretch" | false;
+    justifyContent?: "normal" | "flex-start" | "flex-end" | "center" | "space-between" | "space-around" | "space-evenly" | "stretch" | false;
     flexDirection?: FlexDirection;
     wrap?: boolean;
     columnGap?: SpacingData;
     rowGap?: SpacingData;
+    gap?: SpacingData;
     fullHeight?: boolean;
     fullWidth?: boolean;
     spacing?: SpacingData;
     center?: boolean;
     stackMobile?: boolean;
 }
-declare const Flex: ({ children, display, alignItems, justifyContent, flexDirection, wrap, columnGap, rowGap, fullHeight, fullWidth, spacing, center, stackMobile, ...rest }: FlexProps) => react_jsx_runtime.JSX.Element;
+declare const Flex: ({ children, display, alignItems, justifyContent, flexDirection, wrap, columnGap, rowGap, gap, fullHeight, fullWidth, spacing, center, stackMobile, ...rest }: FlexProps) => react_jsx_runtime.JSX.Element;
 
 type Overflow = "hidden" | "visible" | "scroll" | "auto";
 interface BoxProps extends React.HTMLAttributes<HTMLDivElement> {
     children: React.ReactNode;
     backgroundColor?: string | false;
     padding?: SpacingArrayData;
+    paddingTop?: SpacingData;
+    paddingRight?: SpacingData;
+    paddingBottom?: SpacingData;
+    paddingLeft?: SpacingData;
+    paddingX?: SpacingData;
+    paddingY?: SpacingData;
     borderRadius?: SpacingArrayData;
+    rounded?: boolean;
     border?: string | false;
     borderWidth?: number | false;
     opacity?: number | false;
@@ -63,7 +71,7 @@ interface BoxProps extends React.HTMLAttributes<HTMLDivElement> {
     overflow?: Overflow | false;
     spacing?: SpacingData;
 }
-declare const Box: ({ children, backgroundColor, padding, borderRadius, borderWidth, border, opacity, shadow, overflow, spacing, ...rest }: BoxProps) => react_jsx_runtime.JSX.Element;
+declare const Box: ({ children, backgroundColor, padding, paddingTop, paddingRight, paddingBottom, paddingLeft, paddingX, paddingY, borderRadius, rounded, borderWidth, border, opacity, shadow, overflow, spacing, ...rest }: BoxProps) => react_jsx_runtime.JSX.Element;
 
 interface TextProps extends React$1.HTMLAttributes<[
     HTMLParagraphElement,
