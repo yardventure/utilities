@@ -1,6 +1,7 @@
-import * as react_jsx_runtime from 'react/jsx-runtime';
+import * as react from 'react';
+import react__default from 'react';
 import { UrlObject } from 'url';
-import React$1 from 'react';
+import * as react_jsx_runtime from 'react/jsx-runtime';
 
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
     as?: any;
@@ -21,7 +22,7 @@ interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
     hint?: string;
     transform?: "uppercase";
 }
-declare const Button: ({ as, buttonColor, textColor, href, external, variant, buttonHeight, buttonWidth, borderRadius, shadow, border, loading, startIcon, endIcon, hint, transform, children, ...rest }: ButtonProps) => react_jsx_runtime.JSX.Element;
+declare const Button: react.ForwardRefExoticComponent<ButtonProps & react.RefAttributes<HTMLButtonElement>>;
 
 interface SpacingArrayData {
     sm?: number[];
@@ -49,7 +50,7 @@ interface FlexProps extends React.HTMLAttributes<HTMLDivElement> {
     center?: boolean;
     stackMobile?: boolean;
 }
-declare const Flex: ({ children, display, alignItems, justifyContent, flexDirection, wrap, columnGap, rowGap, gap, fullHeight, fullWidth, spacing, center, stackMobile, ...rest }: FlexProps) => react_jsx_runtime.JSX.Element;
+declare const Flex: react.ForwardRefExoticComponent<FlexProps & react.RefAttributes<HTMLDivElement>>;
 
 type Overflow = "hidden" | "visible" | "scroll" | "auto";
 interface BoxProps extends React.HTMLAttributes<HTMLDivElement> {
@@ -71,16 +72,16 @@ interface BoxProps extends React.HTMLAttributes<HTMLDivElement> {
     overflow?: Overflow | false;
     spacing?: SpacingData;
 }
-declare const Box: ({ children, backgroundColor, padding, paddingTop, paddingRight, paddingBottom, paddingLeft, paddingX, paddingY, borderRadius, rounded, borderWidth, border, opacity, shadow, overflow, spacing, ...rest }: BoxProps) => react_jsx_runtime.JSX.Element;
+declare const Box: react.ForwardRefExoticComponent<BoxProps & react.RefAttributes<HTMLDivElement>>;
 
-interface TextProps extends React$1.HTMLAttributes<[
+interface TextProps extends react__default.HTMLAttributes<[
     HTMLParagraphElement,
     HTMLHeadingElement,
     HTMLSpanElement
 ]> {
-    tagName: React$1.ElementType;
+    tagName: react__default.ElementType;
     variant: string;
-    children: React$1.ReactNode;
+    children: react__default.ReactNode;
     mobile?: boolean | false;
     transform?: "uppercase" | "capitalize" | "lowercase" | false;
     decoration?: "underline" | "lineThrough" | false;
@@ -98,7 +99,7 @@ interface GridProps extends React.HTMLAttributes<HTMLDivElement> {
     gutter: SpacingArrayData;
     spacing?: SpacingData;
 }
-declare const Grid: ({ children, column, gutter, spacing, ...rest }: GridProps) => react_jsx_runtime.JSX.Element;
+declare const Grid: react.ForwardRefExoticComponent<GridProps & react.RefAttributes<HTMLDivElement>>;
 
 interface ContainerProps {
     children: React.ReactNode;
@@ -146,7 +147,7 @@ interface RadioProps extends React.HTMLAttributes<HTMLDivElement> {
     setActive?: Function;
     reverse?: boolean;
 }
-declare const Radio: ({ children, active, setActive, reverse, ...rest }: RadioProps) => react_jsx_runtime.JSX.Element;
+declare const Radio: react.ForwardRefExoticComponent<RadioProps & react.RefAttributes<HTMLDivElement>>;
 
 interface CheckboxProps extends React.HTMLAttributes<HTMLDivElement> {
     children?: React.ReactNode;
@@ -155,7 +156,7 @@ interface CheckboxProps extends React.HTMLAttributes<HTMLDivElement> {
     setActive?: Function;
     reverse?: boolean;
 }
-declare const Checkbox: ({ children, active, customIcon, setActive, reverse, ...rest }: CheckboxProps) => react_jsx_runtime.JSX.Element;
+declare const Checkbox: react.ForwardRefExoticComponent<CheckboxProps & react.RefAttributes<HTMLDivElement>>;
 
 interface TrustpilotStarsProps {
     size?: number;
