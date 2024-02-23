@@ -101,25 +101,25 @@ interface GridProps extends React.HTMLAttributes<HTMLDivElement> {
 }
 declare const Grid: react.ForwardRefExoticComponent<GridProps & react.RefAttributes<HTMLDivElement>>;
 
-interface ContainerProps {
+interface ContainerProps extends React.HTMLAttributes<HTMLDivElement> {
     children: React.ReactNode;
 }
-declare const Container: ({ children }: ContainerProps) => react_jsx_runtime.JSX.Element;
+declare const Container: ({ children, ...rest }: ContainerProps) => react_jsx_runtime.JSX.Element;
 
-interface RowProps {
+interface RowProps extends React.HTMLAttributes<HTMLDivElement> {
     padding?: number;
     position?: "space-between" | "center" | "flex-start" | "flex-end";
-    align?: "center";
+    align?: "center" | "flex-start" | "flex-end" | "baseline";
     children: React.ReactNode;
 }
-declare const Row: ({ children, padding, position, align }: RowProps) => react_jsx_runtime.JSX.Element;
+declare const Row: ({ children, padding, position, align, ...rest }: RowProps) => react_jsx_runtime.JSX.Element;
 
-interface ColumnProps {
+interface ColumnProps extends React.HTMLAttributes<HTMLDivElement> {
     column: number;
     gutter: number;
     children: React.ReactNode;
 }
-declare const Column: ({ children, column, gutter }: ColumnProps) => react_jsx_runtime.JSX.Element;
+declare const Column: ({ children, column, gutter, ...rest }: ColumnProps) => react_jsx_runtime.JSX.Element;
 
 interface AccordionProps {
     children: JSX.Element[];

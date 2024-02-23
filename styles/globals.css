@@ -22640,8 +22640,14 @@
     justify-content: flex-start; }
   .position-8us4IE-flex-end {
     justify-content: flex-end; }
+  .align-8us4IE-flex-start {
+    align-items: flex-start; }
+  .align-8us4IE-flex-end {
+    align-items: flex-end; }
   .align-8us4IE-center {
     align-items: center; }
+  .align-8us4IE-baseline {
+    align-items: baseline; }
   .col-8us4IE-1-1 {
     width: calc((1 * 6.4rem) + (1 * 3.2em)); }
   .col-8us4IE-1-2 {
