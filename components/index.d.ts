@@ -35,7 +35,7 @@ interface SpacingData {
 
 type FlexDirection = "row" | "column" | "column-reverse" | "row-reverse" | false;
 interface FlexProps extends React.HTMLAttributes<HTMLDivElement> {
-    children: React.ReactNode;
+    children?: React.ReactNode;
     display?: "flex" | "inline-flex";
     alignItems?: "normal" | "flex-start" | "flex-end" | "center" | "baseline" | "stretch" | false;
     justifyContent?: "normal" | "flex-start" | "flex-end" | "center" | "space-between" | "space-around" | "space-evenly" | "stretch" | false;
@@ -54,7 +54,7 @@ declare const Flex: react.ForwardRefExoticComponent<FlexProps & react.RefAttribu
 
 type Overflow = "hidden" | "visible" | "scroll" | "auto";
 interface BoxProps extends React.HTMLAttributes<HTMLDivElement> {
-    children: React.ReactNode;
+    children?: React.ReactNode;
     backgroundColor?: string | false;
     padding?: SpacingArrayData;
     paddingTop?: SpacingData;
@@ -79,7 +79,7 @@ interface TextProps extends react__default.HTMLAttributes<[
     HTMLHeadingElement,
     HTMLSpanElement
 ]> {
-    tagName: react__default.ElementType;
+    tagName?: react__default.ElementType;
     variant: string;
     children: react__default.ReactNode;
     mobile?: boolean | false;
@@ -121,17 +121,16 @@ interface ColumnProps extends React.HTMLAttributes<HTMLDivElement> {
 }
 declare const Column: ({ children, column, gutter, ...rest }: ColumnProps) => react_jsx_runtime.JSX.Element;
 
-interface AccordionProps {
+interface AccordionProps extends React.DetailedHTMLProps<React.HTMLAttributes<HTMLDivElement>, HTMLDivElement> {
     children: JSX.Element[];
     active?: boolean;
-    customClass?: string;
     maxHeight?: number;
     contentHeight?: number;
     onToggle?: Function;
     listeners?: any[];
     reverse?: boolean;
 }
-declare const Accordion: ({ children, active, customClass, maxHeight, contentHeight, onToggle, listeners, reverse, }: AccordionProps) => react_jsx_runtime.JSX.Element;
+declare const Accordion: ({ children, active, maxHeight, contentHeight, onToggle, listeners, reverse, ...rest }: AccordionProps) => react_jsx_runtime.JSX.Element;
 interface AccordionContentProps {
     children: React.ReactNode;
 }
