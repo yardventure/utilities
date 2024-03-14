@@ -49,6 +49,7 @@ interface FlexProps extends React.HTMLAttributes<HTMLDivElement> {
     spacing?: SpacingData;
     center?: boolean;
     stackMobile?: boolean;
+    stackDesktop?: boolean;
 }
 declare const Flex: react.ForwardRefExoticComponent<FlexProps & react.RefAttributes<HTMLDivElement>>;
 

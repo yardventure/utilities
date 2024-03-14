@@ -55,6 +55,11 @@
     @media screen and (min-width: 1168px) {
       .flex-8us4IE-flexDirection-row.flex-8us4IE-stackMobile {
         flex-direction: row; } }
+  .flex-8us4IE-flexDirection-row.flex-8us4IE-stackDesktop {
+    flex-direction: row; }
+    @media screen and (min-width: 1168px) {
+      .flex-8us4IE-flexDirection-row.flex-8us4IE-stackDesktop {
+        flex-direction: column; } }
 
 .flex-8us4IE-flexDirection-column {
   flex-direction: column; }
@@ -62,6 +67,11 @@
     flex-direction: column; }
     @media screen and (min-width: 1168px) {
       .flex-8us4IE-flexDirection-column.flex-8us4IE-stackMobile {
+        flex-direction: column; } }
+  .flex-8us4IE-flexDirection-column.flex-8us4IE-stackDesktop {
+    flex-direction: column; }
+    @media screen and (min-width: 1168px) {
+      .flex-8us4IE-flexDirection-column.flex-8us4IE-stackDesktop {
         flex-direction: column; } }
 
 .flex-8us4IE-flexDirection-column-reverse {
@@ -71,6 +81,11 @@
     @media screen and (min-width: 1168px) {
       .flex-8us4IE-flexDirection-column-reverse.flex-8us4IE-stackMobile {
         flex-direction: column-reverse; } }
+  .flex-8us4IE-flexDirection-column-reverse.flex-8us4IE-stackDesktop {
+    flex-direction: column-reverse; }
+    @media screen and (min-width: 1168px) {
+      .flex-8us4IE-flexDirection-column-reverse.flex-8us4IE-stackDesktop {
+        flex-direction: column; } }
 
 .flex-8us4IE-flexDirection-row-reverse {
   flex-direction: row-reverse; }
@@ -79,6 +94,11 @@
     @media screen and (min-width: 1168px) {
       .flex-8us4IE-flexDirection-row-reverse.flex-8us4IE-stackMobile {
         flex-direction: row-reverse; } }
+  .flex-8us4IE-flexDirection-row-reverse.flex-8us4IE-stackDesktop {
+    flex-direction: row-reverse; }
+    @media screen and (min-width: 1168px) {
+      .flex-8us4IE-flexDirection-row-reverse.flex-8us4IE-stackDesktop {
+        flex-direction: column; } }
 
 .box-8us4IE-rounded {
   border-radius: 50%; }
