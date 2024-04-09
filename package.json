@@ -1,6 +1,6 @@
 {
   "name": "yard-utilities",
-  "version": "1.1.14",
+  "version": "1.1.15",
   "description": "Most used functions and components",
   "main": "dist/index.",
   "types": "dist/index.d.ts",
